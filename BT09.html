@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Arr(...arr){
+            let n;
+            for( let item of arr){
+                n = item.length;
+            }
+            let i  =0;
+            let string = [];
+            while( i < n ){
+                let container=[]
+                for(let item of arr){
+                    container.push(item[i])
+                }
+                string.push(container);
+                i++;
+            }
+        }
+        console.log(check([1,2,3],["d","b","c"]));
+    </script>
+</body>
+</html>

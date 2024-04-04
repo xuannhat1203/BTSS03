@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function total(...arr) {
+            return arr.reduce((string,arr)=>{
+                let sum=0
+                for(let item of arr){
+                    sum+=item;
+                }
+                string.push(sum)
+                return string;
+            },[])
+        }
+        console.log(total([1,5],[4,3]))
+    </script>
+</body>
+</html>
